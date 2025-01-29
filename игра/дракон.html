@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dragon</title>
+</head>
+<body background="https://i.pinimg.com/originals/9b/12/64/9b1264d09c5c0efad3536c73074e07b1.png">
+    <ul>
+    <li><button id="runner">перейти к бою(1)</button></li>
+    <li><button id="runner1">перейти к бою(2)</button> </li>
+    <li><button id="runner2">перейти к бою(3)</button> </li>
+    <li><button id="runner3">перейти к бою(4)</button> </li></ul>
+    <button ><a href="menu.html"> перейти в меню</a></button>
+    <style>body{ color: rgba(255, 0, 0, 0.952);
+        background-attachment: fixed; 
+          background-size: cover}</style>
+    <script> 
+    let health = 100
+    let event2
+    let event1 
+    let event3
+    let event4
+    let runner1 =document.getElementById ('runner1')
+    let runner2 = document.getElementById ('runner2')
+     const runner3 = document.getElementById('runner3')
+    
+    runner.addEventListener ('click' ,() =>{
+          event1= prompt (` ты видишь спящего дракона 
+          1 бойти тихо 
+          2 попытаться убить дракона
+          `)
+          
+         if (event1 == 1){  
+           alert ('УДАЧА')
+           
+          
+          }
+          else if (event1 == 2){
+           alert ( 'WASTED')
+           window.location.href = 'http://127.0.0.1:5500/timer.html' 
+           }
+           
+
+           
+        
+          
+        else 
+     alert(`не правильный код  
+      вводи номера вариантов ответа` )})
+    runner1.addEventListener ('click' ,() =>{
+        event2 =prompt (`дракон проснулся 
+       
+        1 убить дракона
+        2 ринуться к цели `)
+        if(event2 == 1) {
+            
+        }
+        else if(event2==1) {
+            alert ('глупое решение')
+            window.location.href = 'http://127.0.0.1:5500/timer.html' 
+        }
+        else if (event2==2)
+        {alert('везет тебе')
+        
+        function sum(health , i ){
+  return salt - i}
+
+health= sum(health , i)}
+        
+
+        else 
+     alert(`не правильный код  
+      вводи номера вариантов ответа` )})
+      runner2.addEventListener ('click' ,() =>{
+        event3 =prompt (`ты видишь то зачем пришел 
+        1 взять
+        2  убить дракона
+       3 ждать когда он уснет
+        `)
+      
+       
+        
+   if(event3==1) {
+            alert (`ОТ РЕВА ДРАКОНА ВХОД ЗАВАЛИЛО. press F 
+            
+        поздравляю ты нашел первое  кодовое слово = F`
+            )
+            window.location.href = 'http://127.0.0.1:5500/timer.html' 
+        }
+        else if (event3==2)
+        {alert('ЭМММ.......')
+        window.location.href = 'http://127.0.0.1:5500/timer.html'}
+else if (event3==3) {
+    alert ('он уснул так как ты хорошо спрятался и не был замечен')
+
+} 
+
+        else 
+     alert(`не правильный код  
+      вводи номера вариантов ответа` )})
+      
+      if (health<=0) {
+        alert('у тебя 0 HP ')
+        window.location.href = 'http://127.0.0.1:5500/timer.html'
+    }
+    runner3.addEventListener ('click' , () => {
+event4=prompt ('1  забрать сапфир и отнести эльфам')
+   
+       if (event4 == 1 ){
+        alert (`ты завершил миссию забрав сапфир
+        
+        подравляю с получение кодового слова = сапфир`)
+        window.location.href = 'http://127.0.0.1:5500/win.html'}
+       
+        else 
+     alert(`не правильный код  
+      вводи номера вариантов ответа` )
+    
+       })
+
+        
+        </script>
+</body>
+</html>

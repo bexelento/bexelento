@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link  rel="stylesheet" href="menu.css">
+    <title>menu</title>
+ </head>
+ <body background="https://i.pinimg.com/originals/8f/64/a1/8f64a1fdab6f5eefe95e50f98491f979.jpg">
+     <h1>ТЫ ПОПАЛ В МЕНЮ </h1>
+     <h2> ВЫБЕРИ ДЕЙСТВИЕ </h2>
+     <ul>  <li><button  id="swamp"><a href="болото.html">перейди в болото</a> </button></li>
+      <li><button id="city"><a href="город.html">перейди в город</a> </button></li>
+      <li><button id="dragon"><a href="дракон.html">идти к дракону</a> </button></li>
+      <li><button id="game_complete">прошли игру? нажмите</button></li>
+      </ul>
+     <p id="p"></p>
+     
+     <style>
+      
+
+body {
+       background-attachment: fixed; 
+        background-size: cover;
+    background-color: rgb(255, 223, 137) ;
+    color: rgb(245, 204, 22);
+    transition: 5s;
+    text-shadow: 20px rgb(203, 243, 60);}
+header{ padding: 25px;
+  text-shadow: rgb(255, 228, 106); }
+#swamp {
+    font-size: 40px;
+    background-color: rgb(111, 199, 111);
+    border-color:rgb(111, 199, 111) ;
+}
+#city {
+
+    font-size: 40px;
+    background-color: rgb(41, 224, 16);
+    border-color:rgb(185, 95, 10) ;
+}
+#dragon {
+  background-color: brown;
+  color: crimson;
+  font-size: 40px;
+  
+}
+#lose {
+    font-size: x-large;
+    color: rgb(255, 82, 82);
+}
+     </style>
+      <script>
+        let swampword
+        let cityword
+        let dragonword1
+        let dragonword2
+       let GameCompleteButton = document.getElementById ('game_complete')
+       let GameComplete = uncomplete
+        const swampbutton = document.getElementById(`swamp`)
+        
+       const citybutton = document.getElementById(`city`)
+       
+       
+       const dragonbutton =document.getElementById(`dragon`)
+       
+        
+        
+        
+        const button1 = document.getElementById  ('balance')
+        const button2 =document.getElementById ('health')
+          
+          const audio = new Audio('mus_waterfall.mp3')
+          audio.play  ()
+  swampbutton.addEventListener (`click` , () => {
+    swamp=complete
+  
+  })
+  citybutton.addEventListener (`click` , () => {
+    city=complete
+  })
+  dragonbutton.addEventListener (`click` , () => {
+    dragon=complete
+  })
+  GameCompleteButton.addEventListener ('click' , () => {
+    swampword=prompt('введи кодовое слово из болота ')
+   cityword = prompt( 'введи кодовое слово из города')
+   dragonword1 = prompt('введи 1 кодовое слово из драконьего ущелья')
+   dragonword2 = prompt('введи 2 кодовое слово из драконьего ущелья')
+
+
+  })
+ 
+
+  
+ 
+
+      </script>
+ </body>
+ </html>
