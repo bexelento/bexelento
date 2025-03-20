@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dragon</title>
 </head>
-<body background="https://i.pinimg.com/originals/9b/12/64/9b1264d09c5c0efad3536c73074e07b1.png">
+<body background="https://images3.nplod.ru/gen_images_1/os98jH2vA4Nehd8IgIuZvtFYosleuqGW_sm.jpg">
     <ul>
     <li><button id="runner">перейти к бою(1)</button></li>
     <li><button id="runner1">перейти к бою(2)</button> </li>
@@ -17,25 +17,24 @@
         background-attachment: fixed; 
           background-size: cover}</style>
     <script> 
-    let health = 100
+    let luck
     let event2
     let event1 
     let event3
     let event4
     let runner1 =document.getElementById ('runner1')
     let runner2 = document.getElementById ('runner2')
-     const runner3 = document.getElementById('runner3')
+     let runner3 = document.getElementById('runner3')
     
     runner.addEventListener ('click' ,() =>{
           event1= prompt (` ты видишь спящего дракона 
           1 бойти тихо 
           2 попытаться убить дракона
           `)
-          
+          i
          if (event1 == 1){  
-           alert ('УДАЧА')
            
-          
+            alert (' успех')
           }
           else if (event1 == 2){
            alert ( 'WASTED')
@@ -47,8 +46,7 @@
         
           
         else 
-     alert(`не правильный код  
-      вводи номера вариантов ответа` )})
+     alert(`неправильный код выбора` )})
     runner1.addEventListener ('click' ,() =>{
         event2 =prompt (`дракон проснулся 
        
@@ -101,17 +99,13 @@ else if (event3==3) {
      alert(`не правильный код  
       вводи номера вариантов ответа` )})
       
-      if (health<=0) {
-        alert('у тебя 0 HP ')
-        window.location.href = 'http://127.0.0.1:5500/timer.html'
-    }
+    
+
     runner3.addEventListener ('click' , () => {
 event4=prompt ('1  забрать сапфир и отнести эльфам')
    
        if (event4 == 1 ){
-        alert (`ты завершил миссию забрав сапфир
-        
-        подравляю с получение кодового слова = сапфир`)
+        alert (`ты завершил миссию забрав сапфир`)
         window.location.href = 'http://127.0.0.1:5500/win.html'}
        
         else 
