@@ -1,4 +1,0 @@
-
-      setTimeout(function() {
-  window.location.replace = "timer.html";
-}, 2000);
