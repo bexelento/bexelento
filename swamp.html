@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swamp</title>
+ </head>
+ <body background="https://i.gifer.com/embedded/download/REcC.gif">
+    <h1> болото </h1>
+    <button id="runner">приступить к сценарию</button>
+    <button ><a href="menu.html"> перейти в меню</a></button>
+    <style> body {background-attachment: fixed; 
+      background-size: cover;}</style>
+      <script>
+         const runner = document.getElementById ('runner')
+         let event1 = 
+         runner.addEventListener ('click' ,() =>{
+           event1= prompt (`ты начал тонуть
+           1 пытаться выплыть      
+           2 будешь орать и звать на помощь    
+           3 смириться`)
+           if (event1 == 3){
+            alert('смирился и был спасен лесником проходящем мимо')
+           }
+          else if (event1 == 1){  
+            alert ('НЕ УДАЧА . ТЫ ПРОИГРАЛ')
+            window.location.href = 'http://127.0.0.1:5500/timer.html'
+           }
+           else if (event1 == 2){
+            alert ('ты кричал очень громко но после была лишь пустота (тебя застрелил лесник)                                                                                    кодовое слово = лесник')
+            window.location.href = 'http://127.0.0.1:5500/timer.html'
+       
+           }
+         else 
+      alert(`не правильный код  
+       вводи номера вариантов ответа` )}) 
+
+       
+
+          
+           
+           
+
+         
+      </script>
+ </body>
+ </html>
